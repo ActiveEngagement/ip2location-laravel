@@ -23,5 +23,15 @@
         "psr-4": {
             "Ip2location\\IP2LocationLaravel\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ip2location\\IP2LocationLaravel\\IP2LocationLaravelServiceProvider::class"
+            ],
+            "aliases": {
+                "Ip2location": "Ip2location\\IP2LocationLaravel\\Facade\\IP2LocationLaravel"
+            }
+        }
     }
 }
